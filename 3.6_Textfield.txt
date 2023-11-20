@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обробник клавіш</title>
+    hei 
+</head>
+<body>
+
+<input type="text" id="textInput" placeholder="Введіть текст">
+
+<script>
+    var textField = document.getElementById('textInput');
+    textField.addEventListener('keydown', function (event) {
+        alert('Клавіша була натиснута!');
+    });
+</script>
+
+</body>
+</html>
