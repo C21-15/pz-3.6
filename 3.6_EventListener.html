@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Handling Example</title>
+</head>
+<body>
+
+<button id="myButton">Натискай мене</button>
+
+<script>
+
+  var myButton = document.getElementById('myButton');
+  function firstEventHandler() {
+    alert('Подія виникла!');
+  }
+  function secondEventHandler() {
+    alert('Ще один обробник події!');
+  }
+  myButton.addEventListener('click', firstEventHandler);
+
+  myButton.addEventListener('click', secondEventHandler);
+</script>
+
+</body>
+</html>
